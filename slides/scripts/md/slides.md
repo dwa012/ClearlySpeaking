@@ -15,12 +15,20 @@ class: segue dark nobackground
 title: Agenda
 class: big
 build_lists: true
+notes: true 
 
 Things we'll cover (list should build):
 
 - Bullet1
 - Bullet2
 - Bullet3
+
++++
+ 
+ - Some thing really important
+ - others stuff
+ 
++++
 
 ---
 

@@ -45,6 +45,9 @@ def parse_metadata(section):
       metadata[key] = val
 
   return metadata
+  
+def process_notes(section)
+  return ''
 
 def postprocess_html(html, metadata):
   """Returns processed HTML to fit into the slide template format."""
