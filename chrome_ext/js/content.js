@@ -23,21 +23,15 @@ function response(request, sender, sendResponse) {
         chrome.runtime.sendMessage({action: "connect_action"}, temp);
 
         sendResponse({});
-
     }
     else if(request.action == "advance_slide"){
         // advance to the next slide
         $('#next-slide-area').click();
         sendResponse({});
     } else  {
-
         console.log("content: first");
         console.log("content: " + request.action);
-        sendResponse({});
     }
-
-    //sendResponse({});
-    //return true;
 }
 
 

@@ -18,7 +18,6 @@ function response(request, sender, sendResponse) {
     } else {
         console.log("event: " + request.action);
         console.log("event: first");
-        sendResponse({});
     }
 
 }
@@ -37,8 +36,11 @@ var handler =
     onmessage: function (evt) {
 
         console.log("got a message: " + evt.data);
-        chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
-            chrome.tabs.sendMessage(tabs[0].id, {action: "advance_slide"}, function(response) {});
+
+        chrome.tabs.getSelected(null, function(tab) {
+            chrome.tabs.sendMessage(tab.id, {action: "advance_slide"}, function(response) {
+                //left blank
+            });
         });
     }
 };
