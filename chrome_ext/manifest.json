@@ -21,6 +21,7 @@
     "default_popup": "popup.html"
   },
   "permissions": [
+    "tabs",
     "http://localhost:8080/",
     "https://clearly-speaking.appspot.com/"
   ]
